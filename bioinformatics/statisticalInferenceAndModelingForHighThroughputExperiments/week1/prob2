@@ -1,1 +1,0 @@
-sum(geneAnnotation$CHR=="chrY",na.rm=TRUE)

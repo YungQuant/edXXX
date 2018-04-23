@@ -1,3 +1,0 @@
-i = which(geneAnnotation$SYMBOL=="ARPC1A")
-j = which(sampleInfo$date=="2005-06-10")
-geneExpression[i,j]

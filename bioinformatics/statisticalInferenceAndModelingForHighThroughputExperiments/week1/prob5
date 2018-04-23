@@ -1,9 +1,0 @@
-g <- factor(sampleInfo$group)
-myttest <- function(e){
-    x <- e[g==1]
-    y <- e[g==0]
-    return( t.test(x,y)$p.value )
-}
-pVals=apply(geneExpression,1,myttest) # "1" because we act on each row
-min(pVals)
-hist(pVals)

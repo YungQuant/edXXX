@@ -1,2 +1,0 @@
-colMedians=apply(geneExpression,2,median)
-median(colMedians)

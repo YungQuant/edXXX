@@ -1,0 +1,11 @@
+library(devtools)
+install_github("genomicsclass/GSE5859Subset")
+library(GSE5859Subset)
+data(GSE5859Subset)
+
+head(sampleInfo)
+theDate="2005-06-27"
+thisDate<-sampleInfo[sampleInfo$date==theDate,]
+nrow(thisDate)
+
+sum(sampleInfo$date=="2005-06-27")
